@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %} Contact {% endblock title %}
+{% block body %}
+
+<div class="container image-container">
+    <style>
+        .image-container {
+            text-align: center;
+        }
+    </style>
+
+    <img src="data:image/png;base64,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"
+        class="d-block w-50 px-29" alt="">
+
+    <div class="container mt-4">
+        <h2 class="text-center">Contact Us</h2>
+        <form method="POST" action="/contact">
+            {% csrf_token %}
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            </div>
+
+            <!-- Phone Field -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <!-- Description Field -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Message</label>
+                <textarea class="form-control" id="description" name="desc" rows="4"
+                    placeholder="Enter your message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+{% endblock body %}
